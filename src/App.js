@@ -16,7 +16,7 @@ const App = () => {
           <Footer />
         </Route>
 
-        <Route path='/view/:alias'>
+        <Route exact path='/view/:alias'>
           <Brochure />
         </Route>
 

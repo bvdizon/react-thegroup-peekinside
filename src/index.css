@@ -43,6 +43,10 @@ body {
   background-color: var(--color-theme);
 }
 
+.text-center {
+  text-align: center;
+}
+
 .thegroup-hero {
   height: 280px;
   position: relative;
@@ -240,4 +244,13 @@ body {
 }
 .thegroup-footer a:hover {
   color: var(--color-theme);
+}
+
+.error-page {
+  padding-bottom: 50px;
+  margin-bottom: 160px;
+}
+
+.error-page p {
+  margin-bottom: 20px;
 }
