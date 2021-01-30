@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useFetch } from '../hooks/useFetch';
-import Error from './Error';
 import Loading from './Loading';
 
 const gsheetID = '1z-rXlasV9g2PerZz8uiVtuCEmY192U0LyJA3oWyo9i8';

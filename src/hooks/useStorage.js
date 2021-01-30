@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 // these were from 'config.js' file, which hosts the firebase configuration
-import { projectFirestore, projectStorage } from '../firebase/config';
+import { projectStorage } from '../firebase/config';
 
 const useStorage = (file) => {
   const [progress, setProgress] = useState(0);
