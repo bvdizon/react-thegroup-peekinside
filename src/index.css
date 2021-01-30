@@ -254,3 +254,36 @@ body {
 .error-page p {
   margin-bottom: 20px;
 }
+
+/* upload form */
+.form-container {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.form-container label {
+  background-color: var(--color-theme);
+  color: #fff;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+}
+
+.form-container label:hover {
+  background-color: #fff;
+  color: var(--color-theme);
+}
+
+.output {
+  padding: 60px 0;
+}
+
+.output button {
+  background-color: var(--color-accent);
+  color: #fff;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+  border: none;
+  margin: 25px 0 15px;
+}

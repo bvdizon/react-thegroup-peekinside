@@ -5,6 +5,7 @@ import Error from './components/Error';
 import Brochure from './components/Brochure';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import UploadImage from './components/UploadImage';
 
 const App = () => {
   return (
@@ -18,6 +19,11 @@ const App = () => {
 
         <Route exact path='/view/:alias'>
           <Brochure />
+        </Route>
+
+        <Route exact path='/upload'>
+          <Header />
+          <UploadImage />
         </Route>
 
         <Route path='*'>
