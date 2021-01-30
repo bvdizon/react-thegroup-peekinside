@@ -27,7 +27,10 @@ const Brochures = () => {
               return (
                 <article className='thegroup-card' key={data.gsx$alias.$t}>
                   <div className='thegroup-card__img'>
-                    <img src='/assets/images/A1060147_1.jpg' alt='' />
+                    <img
+                      src={data.gsx$thumbnail.$t}
+                      alt={`listing brochure - ${data.gsx$property.$t}`}
+                    />
                     <div className='thegroup-agent'>
                       <p>
                         {data.gsx$name.$t} <span>{data.gsx$lastname.$t}</span>
