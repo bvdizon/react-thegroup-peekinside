@@ -5,7 +5,8 @@ import Loading from './Loading';
 
 const gsheetID = process.env.REACT_APP_GSHEET_ID;
 const gsheetNum = process.env.REACT_APP_GSHEET_NUM;
-const url = `https://spreadsheets.google.com/feeds/list/${gsheetID}/${gsheetNum}/public/values?alt=json`;
+const gsheetUrl = process.env.REACT_APP_GSHEET_URL;
+const url = `${gsheetUrl}/${gsheetID}/${gsheetNum}/public/values?alt=json`;
 
 const Brochure = () => {
   const { loading, data } = useFetch(url);

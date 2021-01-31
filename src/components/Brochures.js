@@ -5,7 +5,8 @@ import Loading from './Loading';
 
 const gsheetID = process.env.REACT_APP_GSHEET_ID;
 const gsheetNum = process.env.REACT_APP_GSHEET_NUM;
-const url = `https://spreadsheets.google.com/feeds/list/${gsheetID}/${gsheetNum}/public/values?alt=json`;
+const gsheetUrl = process.env.REACT_APP_GSHEET_URL;
+const url = `${gsheetUrl}/${gsheetID}/${gsheetNum}/public/values?alt=json`;
 
 const Brochures = () => {
   const { loading, data } = useFetch(url);
@@ -22,9 +23,11 @@ const Brochures = () => {
       <section className='thegroup-listings'>
         {data &&
           data.feed.entry.map((data) => {
-            if (data.gsx$active.$t === 'Yes') {
-              return <Card data={data} key={data.gsx$alias.$t} />;
-            }
+            return (
+              data.gsx$active.$t === 'Yes' && (
+                <Card data={data} key={data.gsx$alias.$t} />
+              )
+            );
           })}
       </section>
     </main>
