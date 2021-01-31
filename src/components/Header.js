@@ -5,7 +5,7 @@ const Header = () => {
     <header className='thegroup-hero'>
       <img
         src='/assets/images/team-photo-the-group-at-remax-first.jpg'
-        alt=''
+        alt='team of The Group at RE/MAX First'
       />
     </header>
   );
