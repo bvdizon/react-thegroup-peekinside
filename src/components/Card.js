@@ -5,10 +5,12 @@ const Card = ({ data }) => {
   return (
     <article className='thegroup-card' key={data.gsx$alias.$t}>
       <div className='thegroup-card__img'>
-        <img
-          src={data.gsx$thumbnail.$t}
-          alt={`listing brochure - ${data.gsx$property.$t}`}
-        />
+        <Link to={`/view/${data.gsx$alias.$t}`}>
+          <img
+            src={data.gsx$thumbnail.$t}
+            alt={`listing brochure - ${data.gsx$property.$t}`}
+          />
+        </Link>
         <div className='thegroup-agent'>
           <p>
             {data.gsx$name.$t} <span>{data.gsx$lastname.$t}</span>
